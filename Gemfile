@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.11'
 
 gem 'pg'
+gem 'haml'
+gem 'haml-rails'
 
 
 # Gems used only for assets and not required
