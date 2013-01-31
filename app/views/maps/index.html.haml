@@ -1,1 +1,13 @@
-%h1 fuck yeah
+%h1 Group Think Mind Maps
+.row
+  .span6
+    %h2= link_to 'Create New Map', new_map_path
+  .span6
+    %h2 Existing Maps
+    - if @maps.any?
+      %ul
+        - @maps.each do |map|
+          %li= link_to "View #{map.name}", map_path(map)
+    - else
+      %p
+        %strong No Maps :(
